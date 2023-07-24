@@ -19,7 +19,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: macOS
     steps:
     - name: Display operating system
       run: echo ${{ runner.os }}
