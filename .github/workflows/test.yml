@@ -8,5 +8,5 @@ jobs:
     runs-on: ["self-hosted", "macOS"]
     steps:
       - name: Run
-        run: echo Hello
+        run: echo AAAAAA
         shell: bash
