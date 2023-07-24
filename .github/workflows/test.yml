@@ -1,12 +1,28 @@
+# name: CI
+# on:
+#   push:
+#     branches: [ "main" ]
+# jobs:
+#   build:
+#     # The type of runner that the job will run on
+#     runs-on: ["self-hosted", "macOS"]
+#     steps:
+#       - name: Run
+#         run: echo AAAAAA
+#         shell: bash
+
+
 name: CI
+
 on:
-  push:
-    branches: [ "main" ]
+  push
+
 jobs:
   build:
-    # The type of runner that the job will run on
-    runs-on: ["self-hosted", "macOS"]
+    runs-on: self-hosted
     steps:
-      - name: Run
-        run: echo AAAAAA
-        shell: bash
+    - name: Display operating system
+      run: echo ${{ runner.os }}
+
+    - name: Display date
+      run: date
