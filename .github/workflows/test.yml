@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Run
         run: echo Hello
-        shell: sh
+        shell: bash
